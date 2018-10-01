@@ -13,11 +13,11 @@ int posicio(int x, const vector<int>& v, int esq, int dre) {
 }
 
 vector<bool> get_sieve() {
-    vector<bool> sieve(10000001, true);
+    vector<bool> sieve(20000001, true);
     sieve[0] = false;
     sieve[1] = false;
-    for (int i=2; i<=10000000; ++i) {
-        if (sieve[i]) for (int j=2*i; j<=10000000; j+=i) sieve[j] = false;
+    for (int i=2; i<=20000000; ++i) {
+        if (sieve[i]) for (int j=2*i; j<=20000000; j+=i) sieve[j] = false;
     }
     return sieve;
 }
